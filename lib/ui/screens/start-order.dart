@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:fruits_hub/ui/screens/start-order.dart';
 import 'package:fruits_hub/widgets/primary-button.dart';
+import 'package:fruits_hub/widgets/primary-input.dart';
 
-class Onboard extends StatelessWidget {
-  const Onboard({ Key? key }) : super(key: key);
+class StartOrder extends StatelessWidget {
+  const StartOrder({ Key? key }) : super(key: key);
 
-  @override
+  @override  
   Widget build(BuildContext context) {
     final  fullWidth = MediaQuery.of(context).size.width;
     return  Scaffold(
@@ -20,7 +20,7 @@ class Onboard extends StatelessWidget {
               padding: const EdgeInsets.only(top: 50),
               width: MediaQuery.of(context).size.width,
               color: Theme.of(context).primaryColor,
-              child: Image.asset("assets/images/basket-1.png")
+              child: Image.asset("assets/images/basket-2.png")
             ),
             Container(
               width: fullWidth,
@@ -31,7 +31,7 @@ class Onboard extends StatelessWidget {
                     padding:  EdgeInsets.only(top: 20),
                     child:  Align(
                       alignment: Alignment.centerLeft,
-                      child: Text("Get The Freshest Fruit Salad Combo", 
+                      child: Text("What is your firstname", 
                        style: TextStyle(
                          fontSize: 15,
                          fontWeight: FontWeight.bold
@@ -39,20 +39,13 @@ class Onboard extends StatelessWidget {
                       ),
                     ),
                   ),
-                const Padding(
+                 const Padding(
                   padding: EdgeInsets.only(top: 20, bottom: 20),
-                  child: Align(
-                    alignment: Alignment.centerLeft,
-                    child: Text("We deliver the best and freshest fruit salad in town. Order for a combo today!!!",
-                    style: TextStyle(
-                      fontSize: 15
-                    ),
-                    ),
-                  ),
+                  child: PrimaryInput(placeholder: "First Name",)
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 100),
-                    child: PrimaryButton(label: "Let's continue", handleClicked: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (contex) =>  const StartOrder())),)
+                  child: PrimaryButton(label: "Start Ordering", handleClicked: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (contex) =>  const StartOrder())))
                 )
                 ],
               ),
