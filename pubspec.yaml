@@ -62,6 +62,9 @@ flutter:
     - assets/images/splash-image.png
     - assets/images/basket-1.png
     - assets/images/basket-2.png
+    - assets/icons/cart-action.png
+    - assets/icons/menu.png
+    - assets/icons/switch.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
