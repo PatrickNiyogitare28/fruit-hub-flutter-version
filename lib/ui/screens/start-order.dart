@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruits_hub/ui/screens/home.dart';
 import 'package:fruits_hub/widgets/primary-button.dart';
 import 'package:fruits_hub/widgets/primary-input.dart';
 
@@ -45,7 +46,7 @@ class StartOrder extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 100),
-                  child: PrimaryButton(label: "Start Ordering", handleClicked: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (contex) =>  const StartOrder())))
+                  child: PrimaryButton(label: "Start Ordering", handleClicked: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (contex) =>  const Home())))
                 )
                 ],
               ),
