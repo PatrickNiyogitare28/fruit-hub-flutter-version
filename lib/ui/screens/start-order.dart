@@ -46,7 +46,7 @@ class StartOrder extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 100),
-                  child: PrimaryButton(label: "Start Ordering", handleClicked: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (contex) =>  const Home())))
+                  child: PrimaryButton(label: "Start Ordering", handleClicked: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (contex) =>  Home())))
                 )
                 ],
               ),
